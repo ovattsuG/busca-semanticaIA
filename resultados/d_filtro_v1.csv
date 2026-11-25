@@ -1,0 +1,7 @@
+﻿pergunta_id,pergunta,filtro,rank,id,categoria,distancia
+Q7,Como funciona a busca?,(sem filtro),1,RAG-08,rag,0.4836
+Q7,Como funciona a busca?,(sem filtro),2,VET-07,bancos_vetoriais,0.5937
+Q7,Como funciona a busca?,(sem filtro),3,RAG-07,rag,0.6173
+Q7,Como funciona a busca?,bancos_vetoriais,1,VET-07,bancos_vetoriais,0.5937
+Q7,Como funciona a busca?,bancos_vetoriais,2,VET-06,bancos_vetoriais,0.6292
+Q7,Como funciona a busca?,bancos_vetoriais,3,VET-08,bancos_vetoriais,0.7217

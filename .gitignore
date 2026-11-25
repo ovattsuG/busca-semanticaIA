@@ -1,0 +1,10 @@
+# Banco vetorial local: é gerado por src/indexar.py
+chroma_db/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.idea/
+.vscode/
+CONTEXTO.md

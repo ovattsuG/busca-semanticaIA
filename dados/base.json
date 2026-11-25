@@ -1,0 +1,254 @@
+[
+  {
+    "id": "EMB-01",
+    "categoria": "embeddings",
+    "titulo": "O que é um embedding",
+    "texto": "Um embedding é uma representação numérica de um texto na forma de um vetor de números reais. Textos com significados parecidos ficam próximos nesse espaço vetorial, o que permite comparar frases pelo sentido e não apenas pelas palavras usadas.",
+    "fonte": "Texto elaborado pelo autor com base em: https://www.sbert.net/"
+  },
+  {
+    "id": "EMB-02",
+    "categoria": "embeddings",
+    "titulo": "Word2Vec",
+    "texto": "O Word2Vec, proposto por Mikolov e colegas em 2013, aprende vetores para palavras a partir do contexto em que elas aparecem. Palavras usadas em contextos semelhantes, como rei e rainha, recebem vetores próximos.",
+    "fonte": "Texto elaborado pelo autor com base em: Mikolov et al. (2013), arXiv:1301.3781"
+  },
+  {
+    "id": "EMB-03",
+    "categoria": "embeddings",
+    "titulo": "Sentence-BERT",
+    "texto": "O Sentence-BERT adapta o BERT com redes siamesas para produzir um único vetor por frase. Isso torna a comparação entre sentenças muito mais rápida do que passar cada par de frases pelo BERT completo.",
+    "fonte": "Texto elaborado pelo autor com base em: Reimers e Gurevych (2019), arXiv:1908.10084"
+  },
+  {
+    "id": "EMB-04",
+    "categoria": "embeddings",
+    "titulo": "Modelos multilíngues por destilação",
+    "texto": "Modelos multilíngues de sentenças podem ser treinados por destilação: um modelo aluno aprende a reproduzir, para frases em vários idiomas, os vetores que um modelo professor gera para a frase em inglês. Assim, uma pergunta em português pode ser comparada com textos em outros idiomas.",
+    "fonte": "Texto elaborado pelo autor com base em: Reimers e Gurevych (2020), arXiv:2004.09813"
+  },
+  {
+    "id": "EMB-05",
+    "categoria": "embeddings",
+    "titulo": "Dimensão do modelo multilíngue MiniLM",
+    "texto": "O modelo paraphrase-multilingual-MiniLM-L12-v2 converte frases e parágrafos em vetores de 384 dimensões. Ele é distribuído pela biblioteca sentence-transformers sob licença Apache-2.0 e pode ser executado localmente em CPU.",
+    "fonte": "Texto elaborado pelo autor com base em: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  },
+  {
+    "id": "EMB-06",
+    "categoria": "embeddings",
+    "titulo": "Limite de entrada do modelo",
+    "texto": "O modelo paraphrase-multilingual-MiniLM-L12-v2 aceita no máximo 128 tokens por entrada. Textos maiores são truncados, e a parte excedente não influencia o vetor. Por isso a base deve ser dividida em trechos curtos.",
+    "fonte": "Texto elaborado pelo autor com base em: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  },
+  {
+    "id": "EMB-07",
+    "categoria": "embeddings",
+    "titulo": "Mean pooling",
+    "texto": "Para gerar um vetor por frase, o modelo calcula um vetor para cada token e depois faz o pooling pela média (mean pooling), usando a máscara de atenção para ignorar as posições de preenchimento.",
+    "fonte": "Texto elaborado pelo autor com base em: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  },
+  {
+    "id": "EMB-08",
+    "categoria": "embeddings",
+    "titulo": "Similaridade de cosseno",
+    "texto": "A similaridade de cosseno mede o ângulo entre dois vetores e varia de -1 a 1. Ela ignora o comprimento dos vetores e considera apenas a direção, por isso é muito usada para comparar embeddings de texto.",
+    "fonte": "Texto elaborado pelo autor com base em: https://www.sbert.net/"
+  },
+  {
+    "id": "EMB-09",
+    "categoria": "embeddings",
+    "titulo": "Mesmo modelo para documentos e perguntas",
+    "texto": "Documentos e perguntas precisam ser convertidos pelo mesmo modelo de embeddings. Vetores de modelos diferentes ocupam espaços distintos e, mesmo com a mesma dimensão, suas distâncias não têm significado comparável.",
+    "fonte": "Texto elaborado pelo autor com base em: https://www.sbert.net/"
+  },
+  {
+    "id": "VET-01",
+    "categoria": "ancbos_vetoriais",
+    "titulo": "O que é o ChromaDB",
+    "texto": "O ChromaDB é um banco de dados vetorial de código aberto voltado para aplicações de IA. Ele armazena documentos, seus embeddings e metadados, e permite buscar os registros mais próximos de uma consulta.",
+    "fonte": "Texto elaborado pelo autor com base em: https://www.trychroma.com/"
+  },
+  {
+    "id": "VET-02",
+    "categoria": "bancos_vetoriais",
+    "titulo": "Coleções no ChromaDB",
+    "texto": "No ChromaDB, os dados ficam organizados em coleções. Cada registro de uma coleção tem um identificador único, o documento em texto, o embedding e um dicionário de metadados opcional.",
+    "fonte": "Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/overview/getting-started"
+  },
+  {
+    "id": "VET-03",
+    "categoria": "bancos_vetoriais",
+    "titulo": "Persistência com PersistentClient",
+    "texto": "O PersistentClient do ChromaDB grava os dados em uma pasta do disco. Ao reabrir o programa com o mesmo caminho, a coleção existente é carregada sem precisar inserir os documentos novamente.",
+    "fonte": "Texto elaborado pelo autor com base em: https://docs.trychroma.com/reference/python/client"
+  },
+  {
+    "id": "VET-04",
+    "categoria": "bancos_vetoriais",
+    "titulo": "Chroma Cloud",
+    "texto": "O Chroma Cloud é a versão gerenciada do ChromaDB. A conexão é feita pelo CloudClient, que exige tenant, database e uma chave de API, normalmente lidos de variáveis de ambiente.",
+    "fonte": "Texto elaborado pelo autor com base em: https://docs.trychroma.com/reference/python/client"
+  },
+  {
+    "id": "VET-05",
+    "categoria": "bancos_vetoriais",
+    "titulo": "Métrica de distância da coleção",
+    "texto": "A métrica de distância de uma coleção do ChromaDB é definida na criação, no campo space da configuração hnsw. Os valores aceitos são l2, cosine e ip, e o padrão é l2, a distância euclidiana ao quadrado.",
+    "fonte": "Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/collections/configure"
+  },
+  {
+    "id": "VET-06",
+    "categoria": "bancos_vetoriais",
+    "titulo": "Índice HNSW",
+    "texto": "O HNSW (Hierarchical Navigable Small World) é um algoritmo de busca aproximada de vizinhos mais próximos. Ele organiza os vetores em um grafo de várias camadas, o que permite encontrar vetores parecidos sem comparar a consulta com todos os itens.",
+    "fonte": "Texto elaborado pelo autor com base em: Malkov e Yashunin (2016), arXiv:1603.09320"
+  },
+  {
+    "id": "VET-07",
+    "categoria": "bancos_vetoriais",
+    "titulo": "Consulta com n_results",
+    "texto": "O método query do ChromaDB recebe o texto da pergunta e o parâmetro n_results, que define quantos resultados mais próximos serão devolvidos (Top-K). A resposta traz ids, documentos, metadados e distâncias.",
+    "fonte": "Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/querying-collections/query-and-get"
+  },
+  {
+    "id": "VET-08",
+    "categoria": "bancos_vetoriais",
+    "titulo": "Filtro por metadados (where)",
+    "texto": "O parâmetro where do ChromaDB filtra os registros pelos metadados. Por exemplo, um where com categoria igual a rag restringe a busca aos trechos dessa categoria. Há operadores como $eq, $in, $and e $or.",
+    "fonte": "Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/querying-collections/metadata-filtering"
+  },
+  {
+    "id": "VET-09",
+    "categoria": "bancos_vetoriais",
+    "titulo": "Distância cosseno no ChromaDB",
+    "texto": "No ChromaDB, a distância cosseno é calculada como 1 menos a similaridade de cosseno. Assim, quanto menor a distância, mais parecidos são os vetores; zero indica a mesma direção.",
+    "fonte": "Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/collections/configure"
+  },
+  {
+    "id": "RAG-01",
+    "categoria": "rag",
+    "titulo": "Definição de RAG",
+    "texto": "RAG (Retrieval-Augmented Generation, ou geração aumentada por recuperação) combina um recuperador de documentos com um modelo gerador. Antes de responder, o sistema busca trechos relevantes em uma base externa e os entrega ao modelo como contexto.",
+    "fonte": "Texto elaborado pelo autor com base em: Lewis et al. (2020), arXiv:2005.11401"
+  },
+  {
+    "id": "RAG-02",
+    "categoria": "rag",
+    "titulo": "Memória paramétrica e não paramétrica",
+    "texto": "No artigo de Lewis e colegas (2020), o conhecimento guardado nos pesos do modelo é chamado de memória paramétrica, e o índice de documentos consultado é a memória não paramétrica. Unir as duas gerou respostas mais específicas e factuais.",
+    "fonte": "Texto elaborado pelo autor com base em: Lewis et al. (2020), arXiv:2005.11401"
+  },
+  {
+    "id": "RAG-03",
+    "categoria": "rag",
+    "titulo": "Atualização do conhecimento",
+    "texto": "Uma vantagem do RAG é atualizar o conhecimento do sistema trocando ou acrescentando documentos na base, sem treinar o modelo de linguagem de novo. Também é possível mostrar ao usuário de quais fontes veio a resposta.",
+    "fonte": "Texto elaborado pelo autor com base em: Lewis et al. (2020), arXiv:2005.11401"
+  },
+  {
+    "id": "RAG-04",
+    "categoria": "rag",
+    "titulo": "Fluxo de um sistema RAG",
+    "texto": "O fluxo básico de um RAG tem quatro etapas: gerar embeddings dos documentos e guardá-los em um banco vetorial; gerar o embedding da pergunta; recuperar os trechos mais próximos; e montar um prompt com a pergunta e esses trechos para o modelo gerador.",
+    "fonte": "Texto elaborado pelo autor com base em: Lewis et al. (2020), arXiv:2005.11401"
+  },
+  {
+    "id": "RAG-05",
+    "categoria": "rag",
+    "titulo": "Chunking",
+    "texto": "Chunking é a divisão dos documentos em trechos menores antes da indexação. Trechos muito longos misturam assuntos e podem ser truncados pelo modelo; trechos muito curtos perdem contexto. O ideal é que cada trecho trate de uma única ideia.",
+    "fonte": "Texto elaborado pelo autor com base em: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  },
+  {
+    "id": "RAG-06",
+    "categoria": "rag",
+    "titulo": "Prompt em um sistema RAG",
+    "texto": "O prompt de um sistema RAG deve conter a pergunta do usuário, os trechos recuperados com suas fontes e instruções para que o modelo responda apenas com base nesse contexto, cite as fontes e avise quando a informação for insuficiente.",
+    "fonte": "Texto elaborado pelo autor com base em: Lewis et al. (2020), arXiv:2005.11401"
+  },
+  {
+    "id": "RAG-07",
+    "categoria": "rag",
+    "titulo": "Limite da recuperação vetorial",
+    "texto": "A busca vetorial sempre devolve os K trechos mais próximos, mesmo quando nenhum deles responde à pergunta. Proximidade no espaço vetorial indica semelhança de assunto, mas não garante que a resposta esteja no texto recuperado.",
+    "fonte": "Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/querying-collections/query-and-get"
+  },
+  {
+    "id": "RAG-08",
+    "categoria": "rag",
+    "titulo": "Busca lexical e busca semântica",
+    "texto": "A busca por palavras-chave compara os termos escritos na consulta com os termos do documento. A busca semântica compara significados por meio de embeddings e por isso encontra textos que usam sinônimos ou paráfrases da pergunta.",
+    "fonte": "Texto elaborado pelo autor com base em: https://www.sbert.net/"
+  },
+  {
+    "id": "RAG-09",
+    "categoria": "rag",
+    "titulo": "Escolha do Top-K",
+    "texto": "A escolha do Top-K é um compromisso: valores baixos podem deixar de fora o trecho que contém a resposta, e valores altos trazem trechos pouco relacionados que ocupam espaço no prompt e podem confundir o modelo gerador.",
+    "fonte": "Texto elaborado pelo autor com base em: Lewis et al. (2020), arXiv:2005.11401"
+  },
+  {
+    "id": "LLM-01",
+    "categoria": "llm",
+    "titulo": "Modelo de linguagem",
+    "texto": "Um modelo de linguagem estima a probabilidade do próximo token a partir do texto anterior. Os grandes modelos de linguagem (LLMs) são treinados com enormes volumes de texto e conseguem gerar respostas, resumos e traduções.",
+    "fonte": "Texto elaborado pelo autor com base em: Brown et al. (2020), arXiv:2005.14165"
+  },
+  {
+    "id": "LLM-02",
+    "categoria": "llm",
+    "titulo": "Arquitetura Transformer",
+    "texto": "A arquitetura Transformer, apresentada em 2017 no artigo Attention Is All You Need, substituiu as redes recorrentes por mecanismos de atenção. Ela é a base da maioria dos modelos de linguagem atuais.",
+    "fonte": "Texto elaborado pelo autor com base em: Vaswani et al. (2017), arXiv:1706.03762"
+  },
+  {
+    "id": "LLM-03",
+    "categoria": "llm",
+    "titulo": "Autoatenção",
+    "texto": "O mecanismo de autoatenção permite que cada token de uma frase considere todos os outros tokens ao calcular sua representação, atribuindo pesos maiores às palavras mais relevantes para o contexto.",
+    "fonte": "Texto elaborado pelo autor com base em: Vaswani et al. (2017), arXiv:1706.03762"
+  },
+  {
+    "id": "LLM-04",
+    "categoria": "llm",
+    "titulo": "Tokenização",
+    "texto": "Tokenização é a divisão do texto em unidades menores, os tokens, que podem ser palavras inteiras ou pedaços de palavras. Ferramentas como o SentencePiece aprendem esse vocabulário de subpalavras diretamente do texto bruto.",
+    "fonte": "Texto elaborado pelo autor com base em: Kudo e Richardson (2018), arXiv:1808.06226"
+  },
+  {
+    "id": "LLM-05",
+    "categoria": "llm",
+    "titulo": "Aprendizado few-shot",
+    "texto": "O GPT-3 mostrou que modelos muito grandes conseguem realizar tarefas novas a partir de poucos exemplos colocados no próprio prompt, sem ajuste dos pesos. Essa capacidade é chamada de aprendizado few-shot ou em contexto.",
+    "fonte": "Texto elaborado pelo autor com base em: Brown et al. (2020), arXiv:2005.14165"
+  },
+  {
+    "id": "LLM-06",
+    "categoria": "llm",
+    "titulo": "Janela de contexto",
+    "texto": "A janela de contexto é a quantidade máxima de tokens que um modelo de linguagem processa de uma vez, somando prompt e resposta. Em um RAG, os trechos recuperados precisam caber nesse limite junto com a pergunta.",
+    "fonte": "Texto elaborado pelo autor com base em: Brown et al. (2020), arXiv:2005.14165"
+  },
+  {
+    "id": "LLM-07",
+    "categoria": "llm",
+    "titulo": "Alucinação",
+    "texto": "Alucinação é quando um modelo de linguagem gera um conteúdo fluente e convincente, mas falso ou sem apoio nas fontes. Fornecer documentos confiáveis como contexto é uma das estratégias usadas para reduzir esse problema.",
+    "fonte": "Texto elaborado pelo autor com base em: Ji et al. (2023), arXiv:2202.03629"
+  },
+  {
+    "id": "LLM-08",
+    "categoria": "llm",
+    "titulo": "Ajuste fino",
+    "texto": "Ajuste fino (fine-tuning) é continuar o treinamento de um modelo pré-treinado com dados de uma tarefa específica. Diferente do RAG, ele altera os pesos do modelo, o que exige mais dados e mais computação.",
+    "fonte": "Texto elaborado pelo autor com base em: Brown et al. (2020), arXiv:2005.14165"
+  },
+  {
+    "id": "LLM-09",
+    "categoria": "llm",
+    "titulo": "BERT",
+    "texto": "O BERT é um modelo Transformer pré-treinado para entender texto de forma bidirecional, prevendo palavras mascaradas na frase. Ele é a base de vários modelos de embeddings de sentenças.",
+    "fonte": "Texto elaborado pelo autor com base em: Devlin et al. (2019), arXiv:1810.04805"
+  }
+]

@@ -1,0 +1,9 @@
+﻿pergunta_id,tipo,top1_id,top1_distancia,top3_distancia_media,top3_ids
+Q1,direta,EMB-01,0.2939,0.4646,EMB-01 RAG-05 RAG-01
+Q2,direta,VET-01,0.1683,0.3351,VET-01 VET-04 VET-02
+Q3,direta,VET-05,0.1718,0.293,VET-05 VET-09 VET-07
+Q4,direta,RAG-01,0.3814,0.5242,RAG-01 RAG-05 LLM-04
+Q5,parafrase,EMB-09,0.6156,0.6239,EMB-09 LLM-07 RAG-07
+Q6,parafrase,EMB-05,0.4381,0.4413,EMB-05 EMB-04 EMB-03
+Q7,ambigua,RAG-08,0.511,0.5789,RAG-08 VET-07 RAG-05
+Q8,fora_escopo,VET-04,0.452,0.577,VET-04 VET-01 VET-08

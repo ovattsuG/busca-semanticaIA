@@ -1,0 +1,23 @@
+﻿pergunta_id,tipo,pergunta,rank,id,pontuacao,termos_em_comum,relevante
+Q1,direta,O que é um embedding?,1,EMB-01,1,embedding,sim
+Q1,direta,O que é um embedding?,2,RAG-04,1,embedding,nao
+Q1,direta,O que é um embedding?,3,VET-02,1,embedding,nao
+Q2,direta,O que é o ChromaDB?,1,VET-01,1,chromadb,sim
+Q2,direta,O que é o ChromaDB?,2,VET-02,1,chromadb,sim
+Q2,direta,O que é o ChromaDB?,3,VET-03,1,chromadb,nao
+Q3,direta,Qual métrica de distância o ChromaDB usa por padrão?,1,VET-05,4,chromadb distancia metrica padrao,sim
+Q3,direta,Qual métrica de distância o ChromaDB usa por padrão?,2,VET-09,2,chromadb distancia,nao
+Q3,direta,Qual métrica de distância o ChromaDB usa por padrão?,3,VET-01,1,chromadb,nao
+Q4,direta,O que significa RAG?,1,LLM-06,1,rag,nao
+Q4,direta,O que significa RAG?,2,LLM-08,1,rag,nao
+Q4,direta,O que significa RAG?,3,RAG-01,1,rag,sim
+Q5,parafrase,"Como impedir que a IA invente respostas, apoiando-a em documentos externos?",1,RAG-02,2,documentos respostas,sim
+Q5,parafrase,"Como impedir que a IA invente respostas, apoiando-a em documentos externos?",2,VET-01,2,documentos ia,nao
+Q5,parafrase,"Como impedir que a IA invente respostas, apoiando-a em documentos externos?",3,EMB-09,1,documentos,nao
+Q6,parafrase,De quantos números é formado o vetor que o modelo multilíngue gera para cada frase?,1,EMB-04,3,frase gera modelo,nao
+Q6,parafrase,De quantos números é formado o vetor que o modelo multilíngue gera para cada frase?,2,EMB-07,3,frase modelo vetor,nao
+Q6,parafrase,De quantos números é formado o vetor que o modelo multilíngue gera para cada frase?,3,EMB-01,2,numeros vetor,nao
+Q7,ambigua,Como funciona a busca?,1,RAG-01,1,busca,n/a
+Q7,ambigua,Como funciona a busca?,2,RAG-07,1,busca,n/a
+Q7,ambigua,Como funciona a busca?,3,RAG-08,1,busca,n/a
+Q8,fora_escopo,Quanto custa por mês o plano pago do Chroma Cloud?,1,VET-04,2,chroma cloud,n/a

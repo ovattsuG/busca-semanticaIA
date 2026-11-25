@@ -1,0 +1,25 @@
+﻿pergunta_id,tipo,pergunta,rank,id,categoria,distancia,relevante,fonte
+Q1,direta,O que é um embedding?,1,EMB-01,embeddings,0.2939,sim,Texto elaborado pelo autor com base em: https://www.sbert.net/
+Q1,direta,O que é um embedding?,2,RAG-05,rag,0.529,nao,Texto elaborado pelo autor com base em: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Q1,direta,O que é um embedding?,3,RAG-01,rag,0.5708,nao,"Texto elaborado pelo autor com base em: Lewis et al. (2020), arXiv:2005.11401"
+Q2,direta,O que é o ChromaDB?,1,VET-01,bancos_vetoriais,0.1683,sim,Texto elaborado pelo autor com base em: https://www.trychroma.com/
+Q2,direta,O que é o ChromaDB?,2,VET-04,bancos_vetoriais,0.2972,nao,Texto elaborado pelo autor com base em: https://docs.trychroma.com/reference/python/client
+Q2,direta,O que é o ChromaDB?,3,VET-02,bancos_vetoriais,0.5397,sim,Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/overview/getting-started
+Q3,direta,Qual métrica de distância o ChromaDB usa por padrão?,1,VET-05,bancos_vetoriais,0.1718,sim,Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/collections/configure
+Q3,direta,Qual métrica de distância o ChromaDB usa por padrão?,2,VET-09,bancos_vetoriais,0.2313,nao,Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/collections/configure
+Q3,direta,Qual métrica de distância o ChromaDB usa por padrão?,3,VET-07,bancos_vetoriais,0.476,nao,Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/querying-collections/query-and-get
+Q4,direta,O que significa RAG?,1,RAG-01,rag,0.3814,sim,"Texto elaborado pelo autor com base em: Lewis et al. (2020), arXiv:2005.11401"
+Q4,direta,O que significa RAG?,2,RAG-05,rag,0.5907,nao,Texto elaborado pelo autor com base em: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Q4,direta,O que significa RAG?,3,LLM-04,llm,0.6005,nao,"Texto elaborado pelo autor com base em: Kudo e Richardson (2018), arXiv:1808.06226"
+Q5,parafrase,"Como impedir que a IA invente respostas, apoiando-a em documentos externos?",1,EMB-09,embeddings,0.6156,nao,Texto elaborado pelo autor com base em: https://www.sbert.net/
+Q5,parafrase,"Como impedir que a IA invente respostas, apoiando-a em documentos externos?",2,LLM-07,llm,0.6242,sim,"Texto elaborado pelo autor com base em: Ji et al. (2023), arXiv:2202.03629"
+Q5,parafrase,"Como impedir que a IA invente respostas, apoiando-a em documentos externos?",3,RAG-07,rag,0.632,nao,Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/querying-collections/query-and-get
+Q6,parafrase,De quantos números é formado o vetor que o modelo multilíngue gera para cada frase?,1,EMB-05,embeddings,0.4381,sim,Texto elaborado pelo autor com base em: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Q6,parafrase,De quantos números é formado o vetor que o modelo multilíngue gera para cada frase?,2,EMB-04,embeddings,0.4426,nao,"Texto elaborado pelo autor com base em: Reimers e Gurevych (2020), arXiv:2004.09813"
+Q6,parafrase,De quantos números é formado o vetor que o modelo multilíngue gera para cada frase?,3,EMB-03,embeddings,0.4432,nao,"Texto elaborado pelo autor com base em: Reimers e Gurevych (2019), arXiv:1908.10084"
+Q7,ambigua,Como funciona a busca?,1,RAG-08,rag,0.511,n/a,Texto elaborado pelo autor com base em: https://www.sbert.net/
+Q7,ambigua,Como funciona a busca?,2,VET-07,bancos_vetoriais,0.6009,n/a,Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/querying-collections/query-and-get
+Q7,ambigua,Como funciona a busca?,3,RAG-05,rag,0.6249,n/a,Texto elaborado pelo autor com base em: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Q8,fora_escopo,Quanto custa por mês o plano pago do Chroma Cloud?,1,VET-04,bancos_vetoriais,0.452,n/a,Texto elaborado pelo autor com base em: https://docs.trychroma.com/reference/python/client
+Q8,fora_escopo,Quanto custa por mês o plano pago do Chroma Cloud?,2,VET-01,bancos_vetoriais,0.6262,n/a,Texto elaborado pelo autor com base em: https://www.trychroma.com/
+Q8,fora_escopo,Quanto custa por mês o plano pago do Chroma Cloud?,3,VET-08,bancos_vetoriais,0.6528,n/a,Texto elaborado pelo autor com base em: https://docs.trychroma.com/docs/querying-collections/metadata-filtering

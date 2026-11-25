@@ -1,0 +1,84 @@
+{
+  "_nota": "Gabarito definido ANTES de executar os testes. Q7 e Q8 não entram na métrica.",
+  "top_k_experimento": [
+    "Q1",
+    "Q5"
+  ],
+  "filtro_experimento": {
+    "pergunta": "Q7",
+    "categoria": "bancos_vetoriais"
+  },
+  "rag_casos": [
+    "Q1",
+    "Q5",
+    "Q8"
+  ],
+  "perguntas": [
+    {
+      "id": "Q1",
+      "tipo": "direta",
+      "pergunta": "O que é um embedding?",
+      "relevantes": [
+        "EMB-01"
+      ]
+    },
+    {
+      "id": "Q2",
+      "tipo": "direta",
+      "pergunta": "O que é o ChromaDB?",
+      "relevantes": [
+        "VET-01",
+        "VET-02"
+      ]
+    },
+    {
+      "id": "Q3",
+      "tipo": "direta",
+      "pergunta": "Qual métrica de distância o ChromaDB usa por padrão?",
+      "relevantes": [
+        "VET-05"
+      ]
+    },
+    {
+      "id": "Q4",
+      "tipo": "direta",
+      "pergunta": "O que significa RAG?",
+      "relevantes": [
+        "RAG-01",
+        "RAG-02"
+      ]
+    },
+    {
+      "id": "Q5",
+      "tipo": "parafrase",
+      "pergunta": "Como impedir que a IA invente respostas, apoiando-a em documentos externos?",
+      "relevantes": [
+        "RAG-01",
+        "RAG-02",
+        "RAG-06",
+        "LLM-07"
+      ]
+    },
+    {
+      "id": "Q6",
+      "tipo": "parafrase",
+      "pergunta": "De quantos números é formado o vetor que o modelo multilíngue gera para cada frase?",
+      "relevantes": [
+        "EMB-05"
+      ]
+    },
+    {
+      "id": "Q7",
+      "tipo": "ambigua",
+      "pergunta": "Como funciona a busca?",
+      "relevantes": [],
+      "interpretacoes": "busca lexical x semântica (RAG-08), índice HNSW (VET-06), consulta Top-K no Chroma (VET-07)"
+    },
+    {
+      "id": "Q8",
+      "tipo": "fora_escopo",
+      "pergunta": "Quanto custa por mês o plano pago do Chroma Cloud?",
+      "relevantes": []
+    }
+  ]
+}

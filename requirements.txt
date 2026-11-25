@@ -1,0 +1,3 @@
+# Versões usadas no desenvolvimento (24/11/2026). torch e transformers vêm como dependência.
+chromadb==1.5.9
+sentence-transformers==6.3.0
