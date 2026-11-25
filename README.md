@@ -29,7 +29,21 @@ Estudantes de Engenharia de Software que começam a estudar IA aplicada (embeddi
 ## 4. Como executar
 Testado com Python 3.12.10 (chromadb 1.5.9, sentence-transformers 6.3.0). No Windows, se o `pip` falhar ao instalar o `torch`, use Python 3.12.
 
+> **Importante:** o banco (`chroma_db/`) **não vem no repositório**. É preciso rodar `src/indexar.py` uma vez antes de `buscar.py`, `experimentos.py` ou `rag.py`.
+> A 1ª execução precisa de **internet** para instalar as dependências e baixar o modelo (~470 MB do Hugging Face). Depois disso, tudo roda offline.
+
+### Opção rápida (Windows)
 ```powershell
+git clone https://github.com/ovattsuG/busca-semanticaIA.git
+cd busca-semanticaIA
+rodar_tudo.bat
+```
+O script cria o `.venv`, instala as dependências, valida a base, indexa no Chroma, roda os experimentos e gera os casos de RAG em `resultados/`.
+
+### Passo a passo (qualquer sistema)
+```powershell
+git clone https://github.com/ovattsuG/busca-semanticaIA.git
+cd busca-semanticaIA
 python -m venv .venv
 .venv\Scripts\activate            # Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
@@ -89,7 +103,7 @@ O programa recupera os trechos, monta o **contexto** (texto + id + categoria + f
 dados/        base.json, perguntas.json
 src/          config, comum, validar_base, indexar, buscar, lexical, experimentos, rag
 resultados/   CSVs e casos de RAG (gerados)
-docs/         fluxo.md, roteiro_video.md
+docs/         fluxo.md, analise_resultados.md
 chroma_db/    banco local (gerado; fora do Git)
 ```
 

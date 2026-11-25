@@ -31,5 +31,5 @@ exit /b 0
 
 :erro
 echo.
-echo FALHOU na etapa acima. Copie a mensagem de erro e mande para o Claude.
+echo FALHOU na etapa acima. Veja a mensagem de erro e a secao "Como executar" do README.
 exit /b 1
